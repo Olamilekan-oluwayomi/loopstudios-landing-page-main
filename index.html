@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./public/output.css" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body class="relative">
+    <header class="pb-56 md:pb-32">
+      <!--navbar-->
+      <nav>
+        <!--flex container-->
+        <div
+          class="container mx-auto flex items-center justify-between py-8 px-5 md:py-10 xl:px-10 xl:pb-40"
+        >
+          <!--logo-->
+          <div>
+            <img src="./images/logo.svg" class="relative z-30" alt="" />
+          </div>
+          <!--menu list-->
+          <div class="space-x-5 text-white font-Alata text-lg hidden md:block">
+            <a href="#" class="hover:border-b-4 py-1">About</a>
+            <a href="#" class="hover:border-b-4 py-1">Careers</a>
+            <a href="#" class="hover:border-b-4 py-1">Events</a>
+            <a href="#" class="hover:border-b-4 py-1">Products</a>
+            <a href="#" class="hover:border-b-4 py-1">Support</a>
+          </div>
+
+          <!--hamburger menu-->
+          <img
+            src="./images/icon-hamburger.svg"
+            id="openmenu"
+            class="w-8 relative z-30 md:hidden"
+            alt=""
+          />
+          <img
+            src="./images/icon-close.svg"
+            class="hidden w-8 relative z-30"
+            id="closemenu"
+            alt=""
+          />
+        </div>
+
+        <!--menu list-->
+        <div>
+          <div
+            class="space-y-5 hidden flex-col pl-5 pt-52 top-0 font-light text-white font-Alata text-3xl uppercase h-screen absolute w-full bg-black"
+            id="menudisplay"
+          >
+            <a href="#" class="hover:underline py-1">About</a>
+            <a href="#" class="hover:underline py-1">Careers</a>
+            <a href="#" class="hover:underline py-1">Events</a>
+            <a href="#" class="hover:underline py-1">Products</a>
+            <a href="#" class="hover:underline py-1">Support</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--hero text-->
+      <div
+        class="container mx-auto md:mr-auto md:ml-12 lg:ml-40 xl:ml-28 p-10 md:p-6 xl:p-10 mt-32 md:mt-10 lg:mt-10 xl:mt-5 text-3xl md:text-5xl lg:text-7xl xl:text-8xl text-left uppercase text-white font-Josefin border-2 w-3/4 md:w-1/2"
+      >
+        <h1>Immersive experiences that deliver</h1>
+      </div>
+    </header>
+
+    <!--section 1-->
+    <section class="mt-10 xl:mt-28">
+      <!--grid container-->
+      <div
+        class="container mx-auto grid grid-rows-1 lg:grid-cols-2 md:p-3 xl:p-10 p-5"
+      >
+        <div>
+          <img src="./images/desktop/image-interactive.jpg" alt="" />
+        </div>
+        <!--text-->
+        <div
+          class="mt-10 lg:mt-20 xl:mt-48 md:py-5 lg:py-3 md:px-16 xl:py-7 xl:px-20 lg:shadow-2xl space-y-5 xl:-ml-32 bg-white text-center lg:text-left lg:-ml-20"
+        >
+          <h1
+            class="font-Alata font-extralight tracking-wide text-4xl xl:text-6xl uppercase"
+          >
+            The leader in interactive VR
+          </h1>
+          <p
+            class="text-gray-600 font-Alata font-extralight px-4 lg:px-0 md:text-2xl lg:text-base"
+          >
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--section 2-->
+    <section class="mt-10">
+      <!--grid container-->
+      <div
+        class="container mx-auto md:p-3 xl:p-10 p-5 lg:flex justify-between items-center font-Alata"
+      >
+        <h2
+          class="font-extralight text-4xl md:text-6xl opacity-50 uppercase text-center lg:text-left"
+        >
+          Our creations
+        </h2>
+
+        <button
+          class="border-2 border-gray-400 py-2 px-10 uppercase tracking-widest text-gray-500 hover:bg-black lg:block hidden"
+        >
+          <a href="#">See all</a>
+        </button>
+      </div>
+    </section>
+
+    <!--image section-->
+    <section class="mt-5 lg::mt-20">
+      <div
+        class="container mx-auto md:p-8 xl:p-6 p-5 grid grid-cols-1 md:grid-cols-4 gap-y-14 md:gap-10 lg:gap-20 xl:mr-10"
+      >
+        <a href="#">
+          <img
+            src="./images/desktop/image-deep-earth.jpg"
+            class="hidden md:block mb-6"
+            alt=""
+          />
+          <img
+            src="./images/mobile/image-deep-earth.jpg"
+            class="md:hidden"
+            alt=""
+          />
+          <p
+            class="uppercase font-Alata text-xl ml-7 tracking-widest text-white -mt-20 md:-mt-28 mt-2y"
+          >
+            Deep <br />
+            earth
+          </p>
+        </a>
+        <a href="#">
+          <img
+            src="./images/desktop/image-night-arcade.jpg"
+            class="hidden md:block"
+            alt=""
+          />
+          <img
+            src="./images/mobile/image-night-arcade.jpg"
+            class="md:hidden"
+            alt=""
+          />
+          <p
+            class="uppercase font-Alata text-xl ml-7 tracking-widest text-white -mt-16 md:-mt-20"
+          >
+            Night <br />
+            arcade
+          </p>
+        </a>
+        <a href="#">
+          <img
+            src="./images/desktop/image-soccer-team.jpg"
+            class="hidden md:block"
+            alt=""
+          />
+          <img
+            src="./images/mobile/image-soccer-team.jpg"
+            class="md:hidden"
+            alt=""
+          />
+          <p
+            class="uppercase font-Alata text-xl ml-7 tracking-widest text-white -mt-20"
+          >
+            Soccer <br />
+            team VR
+          </p>
+        </a>
+        <a href="#">
+          <img
+            src="./images/desktop/image-grid.jpg"
+            class="hidden md:block"
+            alt=""
+          />
+          <img src="./images/mobile/image-grid.jpg" class="md:hidden" alt="" />
+          <p
+            class="uppercase font-Alata text-xl ml-7 tracking-widest text-white -mt-20"
+          >
+            The <br />
+            grid
+          </p>
+        </a>
+        <a href="#">
+          <img
+            src="./images/desktop/image-from-above.jpg"
+            class="hidden md:block"
+            alt=""
+          />
+          <img
+            src="./images/mobile/image-from-above.jpg"
+            class="md:hidden"
+            alt=""
+          />
+          <p
+            class="uppercase font-Alata text-xl ml-7 tracking-widest text-white -mt-20"
+          >
+            From up <br />
+            above VR
+          </p>
+        </a>
+        <a href="#">
+          <img
+            src="./images/desktop/image-pocket-borealis.jpg"
+            class="hidden md:block"
+            alt=""
+          />
+          <img
+            src="./images/mobile/image-pocket-borealis.jpg"
+            class="md:hidden"
+            alt=""
+          />
+          <p
+            class="uppercase font-Alata text-xl ml-7 tracking-widest text-white -mt-20"
+          >
+            Pocket <br />
+            borealis
+          </p>
+        </a>
+        <a href="#">
+          <img
+            src="./images/desktop/image-curiosity.jpg"
+            class="hidden md:block"
+            alt=""
+          />
+          <img
+            src="./images/mobile/image-curiosity.jpg"
+            class="md:hidden"
+            alt=""
+          />
+          <p
+            class="uppercase font-Alata text-xl ml-7 tracking-widest text-white -mt-20"
+          >
+            The <br />
+            curiosity
+          </p>
+        </a>
+
+        <a href="#">
+          <img
+            src="./images/desktop/image-fisheye.jpg"
+            class="hidden md:block"
+            alt=""
+          />
+          <img
+            src="./images/mobile/image-fisheye.jpg"
+            class="md:hidden"
+            alt=""
+          />
+          <p
+            class="uppercase font-Alata text-xl ml-7 tracking-widest text-white -mt-20"
+          >
+            Make it <br />
+            fisheye
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <div class="flex items-center justify-center mt-10">
+      <button
+        class="border-2 border-gray-400 py-2 px-10 md:py-3 md:px-16 uppercase tracking-widest text-gray-500 hover:bg-black lg:hidden"
+      >
+        See all
+      </button>
+    </div>
+
+    <!--footer-->
+    <footer class="text-white bg-black mt-10 pb-5">
+      <div
+        class="container mx-auto md:p-3 xl:p-10 p-5 flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="space-y-5 p-5">
+          <img src="./images/logo.svg" class="pl-4 md:pl-0" alt="" />
+          <!--menu list-->
+          <div
+            class="space-x-5 flex flex-col items-center justify-center md:flex-row"
+          >
+            <a href="#" class="hover:underline py-1 pl-4 md:pl-0">About</a>
+            <a href="#" class="hover:underline py-1">Careers</a>
+            <a href="#" class="hover:underline py-1">Events</a>
+            <a href="#" class="hover:underline py-1">Products</a>
+            <a href="#" class="hover:underline py-1">Support</a>
+          </div>
+        </div>
+        <div
+          class="space-y-5 flex flex-col items-center justify-center mt-5 md:mt-0"
+        >
+          <div class="flex items-center gap-5">
+            <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+            <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
+            <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
+            <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
+          </div>
+          <p>© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
